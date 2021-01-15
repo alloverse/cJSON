@@ -7,7 +7,7 @@ include(GNUInstallDirs)
 
 set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 7)
-set(PROJECT_VERSION_PATCH 10)
+set(PROJECT_VERSION_PATCH 14)
 set(CJSON_VERSION_SO 1)
 set(CJSON_UTILS_VERSION_SO 1)
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
@@ -68,7 +68,6 @@ if (ENABLE_SANITIZERS)
         -fno-omit-frame-pointer
         -fsanitize=address
         -fsanitize=undefined
-        -fsanitize=float-divide-by-zero
         -fsanitize=float-cast-overflow
         -fsanitize-address-use-after-scope
         -fsanitize=integer
